@@ -2,75 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/server.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "dist/**/*",
-          "package.json"
-        ]
-      }
+      "src": "src/server.ts",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/auth/(.*)",
-      "dest": "dist/server.js"
-    },
-    {
-      "src": "/api/restaurants/(.*)",
-      "dest": "dist/server.js"
-    },
-    {
-      "src": "/api/menu/(.*)",
-      "dest": "dist/server.js"
-    },
-    {
-      "src": "/api/orders/(.*)",
-      "dest": "dist/server.js"
-    },
-    {
-      "src": "/api/blog/(.*)",
-      "dest": "dist/server.js"
-    },
-    {
-      "src": "/api/reviews/(.*)",
-      "dest": "dist/server.js"
-    },
-    {
-      "src": "/api/rider/(.*)",
-      "dest": "dist/server.js"
-    },
-    {
-      "src": "/api/admin/(.*)",
-      "dest": "dist/server.js"
-    },
-    {
-      "src": "/api/payments/(.*)",
-      "dest": "dist/server.js"
-    },
-    {
-      "src": "/health",
-      "dest": "dist/server.js"
-    },
-    {
-      "src": "/api",
-      "dest": "dist/server.js"
-    },
-    {
       "src": "/(.*)",
-      "dest": "dist/server.js"
+      "dest": "src/server.ts"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production",
-    "VERCEL": "true"
-  },
-  "functions": {
-    "dist/server.js": {
-      "maxDuration": 10,
-      "memory": 1024,
-      "runtime": "nodejs18.x"
-    }
-  }
+  ]
 }
