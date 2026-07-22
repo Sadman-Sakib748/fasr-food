@@ -350,3 +350,15 @@
 2026-07-22 19:58:58 [ERROR]: 📚 Stack: Error: Invalid credentials
     at C:\project\fast-backend\src\controllers\auth.controller.ts:124:23
     at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+2026-07-22 20:16:41 [ERROR]: ❌ Error: Route / not found 
+2026-07-22 20:16:41 [ERROR]: 📚 Stack: Error: Route / not found
+    at notFoundHandler (C:\project\fast-backend\src\middleware\error.middleware.ts:76:17)
+    at Layer.handle [as handle_request] (C:\project\fast-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\project\fast-backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\project\fast-backend\node_modules\express\lib\router\index.js:286:9
+    at router.process_params (C:\project\fast-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\project\fast-backend\node_modules\express\lib\router\index.js:280:10)
+    at hpp (C:\project\fast-backend\node_modules\hpp\lib\index.js:146:9)
+    at Layer.handle [as handle_request] (C:\project\fast-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\project\fast-backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\project\fast-backend\node_modules\express\lib\router\index.js:286:9 

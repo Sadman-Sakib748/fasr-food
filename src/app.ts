@@ -81,9 +81,38 @@ app.use(hpp());
 app.use('/api', limiter);
 
 // ============================================
+// ✅ ROOT ROUTE (সবার আগে)
+// ============================================
+app.get('/', (req: Request, res: Response) => {
+    res.status(200).json({
+        success: true,
+        message: '🚀 Welcome to FastFeast API Server',
+        version: '1.0.0',
+        status: 'Server is running',
+        timestamp: new Date().toISOString(),
+        environment: process.env.NODE_ENV || 'development',
+        endpoints: {
+            root: '/',
+            api: '/api',
+            health: '/health',
+            auth: '/api/auth',
+            restaurants: '/api/restaurants',
+            menu: '/api/menu',
+            orders: '/api/orders',
+            blog: '/api/blog',
+            reviews: '/api/reviews',
+            rider: '/api/rider',
+            admin: '/api/admin',
+            payments: '/api/payments',
+        },
+        documentation: 'https://github.com/yourusername/fastfeast-backend',
+        support: 'support@fastfeast.com'
+    });
+});
+
+// ============================================
 // HEALTH CHECK ROUTES
 // ============================================
-
 app.get('/health', (req: Request, res: Response) => {
     res.status(200).json({
         success: true,
@@ -92,6 +121,9 @@ app.get('/health', (req: Request, res: Response) => {
         timestamp: new Date().toISOString(),
         uptime: process.uptime(),
         version: '1.0.0',
+        environment: process.env.NODE_ENV || 'development',
+        memory: process.memoryUsage(),
+        cpu: process.cpuUsage()
     });
 });
 
@@ -99,6 +131,7 @@ app.get('/api', (req: Request, res: Response) => {
     res.status(200).json({
         success: true,
         message: 'Welcome to FastFeast API',
+        version: '1.0.0',
         endpoints: {
             auth: '/api/auth',
             restaurants: '/api/restaurants',
@@ -109,7 +142,8 @@ app.get('/api', (req: Request, res: Response) => {
             rider: '/api/rider',
             admin: '/api/admin',
             payments: '/api/payments',
-        }
+        },
+        documentation: 'https://github.com/yourusername/fastfeast-backend'
     });
 });
 
