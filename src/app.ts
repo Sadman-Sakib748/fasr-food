@@ -23,6 +23,10 @@ import reviewRoutes from './routes/review.routes';
 import riderRoutes from './routes/rider.routes';
 import adminRoutes from './routes/admin.routes';
 import paymentRoutes from './routes/payment.routes';
+import specialOfferRoutes from './routes/specialOffer.routes';
+import subscriptionRoutes from './routes/subscription.routes';
+import conversationRoutes from './routes/conversation.routes';
+import messageRoutes from './routes/message.routes';
 
 // Import middleware
 import { errorHandler, notFoundHandler } from './middleware/error.middleware';
@@ -81,7 +85,7 @@ app.use(hpp());
 app.use('/api', limiter);
 
 // ============================================
-// ✅ ROOT ROUTE (সবার আগে)
+// ROOT ROUTE
 // ============================================
 app.get('/', (req: Request, res: Response) => {
     res.status(200).json({
@@ -104,6 +108,10 @@ app.get('/', (req: Request, res: Response) => {
             rider: '/api/rider',
             admin: '/api/admin',
             payments: '/api/payments',
+            specialOffers: '/api/special-offers',
+            subscriptions: '/api/subscriptions',
+            conversations: '/api/conversations',
+            messages: '/api/messages',
         },
         documentation: 'https://github.com/yourusername/fastfeast-backend',
         support: 'support@fastfeast.com'
@@ -142,18 +150,22 @@ app.get('/api', (req: Request, res: Response) => {
             rider: '/api/rider',
             admin: '/api/admin',
             payments: '/api/payments',
+            specialOffers: '/api/special-offers',
+            subscriptions: '/api/subscriptions',
+            conversations: '/api/conversations',
+            messages: '/api/messages',
         },
         documentation: 'https://github.com/yourusername/fastfeast-backend'
     });
 });
 
 // ============================================
-// ✅ AUTH ROUTES - FIRST (সবার আগে)
+// AUTH ROUTES - First Priority
 // ============================================
 app.use('/api/auth', authRoutes);
 
 // ============================================
-// OTHER ROUTES
+// OTHER API ROUTES
 // ============================================
 app.use('/api/restaurants', restaurantRoutes);
 app.use('/api/menu', menuRoutes);
@@ -163,14 +175,18 @@ app.use('/api/reviews', reviewRoutes);
 app.use('/api/rider', riderRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/payments', paymentRoutes);
+app.use('/api/special-offers', specialOfferRoutes);
+app.use('/api/subscriptions', subscriptionRoutes);
+app.use('/api/conversations', conversationRoutes);
+app.use('/api/messages', messageRoutes);
 
 // ============================================
-// ✅ FIXED: CATCH-ALL 404 HANDLER (সব রাউটের শেষে)
+// 404 HANDLER - Must be last
 // ============================================
 app.use(notFoundHandler);
 
 // ============================================
-// ✅ GLOBAL ERROR HANDLER (একদম শেষে)
+// GLOBAL ERROR HANDLER
 // ============================================
 app.use(errorHandler);
 
@@ -203,6 +219,38 @@ io.on('connection', (socket) => {
     socket.on('join-restaurant', (restaurantId: string) => {
         socket.join(`restaurant-${restaurantId}`);
         logger.info(`🏪 Socket ${socket.id} joined restaurant ${restaurantId}`);
+    });
+
+    // ============================================
+    // CONVERSATION SOCKET EVENTS
+    // ============================================
+
+    // Join conversation room
+    socket.on('join-conversation', (conversationId: string) => {
+        socket.join(`conversation-${conversationId}`);
+        logger.info(`💬 Socket ${socket.id} joined conversation ${conversationId}`);
+    });
+
+    // Leave conversation room
+    socket.on('leave-conversation', (conversationId: string) => {
+        socket.leave(`conversation-${conversationId}`);
+        logger.info(`💬 Socket ${socket.id} left conversation ${conversationId}`);
+    });
+
+    // Typing indicator
+    socket.on('typing', (data: { conversationId: string; isTyping: boolean }) => {
+        socket.to(`conversation-${data.conversationId}`).emit('user-typing', {
+            userId: socket.id,
+            isTyping: data.isTyping,
+        });
+    });
+
+    // Mark messages as read
+    socket.on('mark-read', (data: { conversationId: string }) => {
+        socket.to(`conversation-${data.conversationId}`).emit('messages-read', {
+            userId: socket.id,
+            conversationId: data.conversationId,
+        });
     });
 
     // Handle disconnection

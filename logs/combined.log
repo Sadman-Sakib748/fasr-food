@@ -1263,3 +1263,11 @@
     at Layer.handle [as handle_request] (C:\project\fast-backend\node_modules\express\lib\router\layer.js:95:5)
     at trim_prefix (C:\project\fast-backend\node_modules\express\lib\router\index.js:328:13)
     at C:\project\fast-backend\node_modules\express\lib\router\index.js:286:9 
+2026-07-22 20:18:05 [INFO]: ✅ MongoDB Connected: ac-t3k8yee-shard-00-01.ig2b4pm.mongodb.net 
+2026-07-22 20:18:05 [INFO]: 📊 Database: SadmanTest 
+2026-07-22 20:18:05 [INFO]: ✅ Database connected successfully 
+2026-07-22 20:18:05 [INFO]: 🚀 Server running on port 5000 
+2026-07-22 20:18:05 [INFO]: 🌍 Environment: development 
+2026-07-22 20:18:05 [INFO]: 🔗 API URL: http://localhost:5000/api 
+2026-07-22 20:18:21 [INFO]: 📡 SIGINT received. Closing server... 
+2026-07-22 20:19:27 [INFO]: ✅ Server closed successfully 

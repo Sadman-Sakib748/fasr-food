@@ -19,15 +19,13 @@ import { validate } from '../middleware/validation.middleware';
 const router = Router();
 
 // ============================================
-// MIDDLEWARE WRAPPERS - FIXED
+// MIDDLEWARE WRAPPERS
 // ============================================
 
-// ✅ Wrap authenticate to match Express middleware signature
 const authMiddleware = (req: Request, res: Response, next: NextFunction): void => {
     authenticate(req as AuthRequest, res, next);
 };
 
-// ✅ Wrap authorize for customer
 const customerMiddleware = (req: Request, res: Response, next: NextFunction): void => {
     authorize('customer')(req as AuthRequest, res, next);
 };
@@ -65,6 +63,53 @@ router.get(
 );
 
 // ============================================
+// GET REVIEWS FOR SPECIFIC TARGET
+// ============================================
+
+/**
+ * Get reviews for a restaurant
+ * GET /api/reviews/restaurant/:restaurantId
+ */
+router.get(
+    '/restaurant/:restaurantId',
+    validate([
+        param('restaurantId').isMongoId().withMessage('Invalid restaurant ID'),
+        query('page').optional().isInt({ min: 1 }).withMessage('Page must be a positive integer'),
+        query('limit').optional().isInt({ min: 1, max: 50 }).withMessage('Limit must be between 1 and 50'),
+        query('rating').optional().isInt({ min: 1, max: 5 }).withMessage('Rating must be between 1 and 5'),
+    ]),
+    getReviews
+);
+
+/**
+ * Get reviews for a menu item
+ * GET /api/reviews/menu-item/:menuItemId
+ */
+router.get(
+    '/menu-item/:menuItemId',
+    validate([
+        param('menuItemId').isMongoId().withMessage('Invalid menu item ID'),
+        query('page').optional().isInt({ min: 1 }).withMessage('Page must be a positive integer'),
+        query('limit').optional().isInt({ min: 1, max: 50 }).withMessage('Limit must be between 1 and 50'),
+    ]),
+    getReviews
+);
+
+/**
+ * Get reviews for a rider
+ * GET /api/reviews/rider/:riderId
+ */
+router.get(
+    '/rider/:riderId',
+    validate([
+        param('riderId').isMongoId().withMessage('Invalid rider ID'),
+        query('page').optional().isInt({ min: 1 }).withMessage('Page must be a positive integer'),
+        query('limit').optional().isInt({ min: 1, max: 50 }).withMessage('Limit must be between 1 and 50'),
+    ]),
+    getReviews
+);
+
+// ============================================
 // PRIVATE ROUTES
 // ============================================
 
@@ -90,34 +135,34 @@ router.post(
             .withMessage('Invalid review type'),
         body('restaurant')
             .optional()
+            .isMongoId()
+            .withMessage('Invalid restaurant ID')
             .custom((value, { req }) => {
                 if (req.body.reviewType === 'restaurant' && !value) {
                     throw new Error('Restaurant ID is required for restaurant review');
                 }
                 return true;
-            })
-            .isMongoId()
-            .withMessage('Invalid restaurant ID'),
+            }),
         body('menuItem')
             .optional()
+            .isMongoId()
+            .withMessage('Invalid menu item ID')
             .custom((value, { req }) => {
                 if (req.body.reviewType === 'menuItem' && !value) {
                     throw new Error('Menu item ID is required for menu item review');
                 }
                 return true;
-            })
-            .isMongoId()
-            .withMessage('Invalid menu item ID'),
+            }),
         body('rider')
             .optional()
+            .isMongoId()
+            .withMessage('Invalid rider ID')
             .custom((value, { req }) => {
                 if (req.body.reviewType === 'rider' && !value) {
                     throw new Error('Rider ID is required for rider review');
                 }
                 return true;
-            })
-            .isMongoId()
-            .withMessage('Invalid rider ID'),
+            }),
     ]),
     createReview
 );
@@ -179,53 +224,6 @@ router.put(
 );
 
 // ============================================
-// GET REVIEWS FOR A SPECIFIC TARGET
-// ============================================
-
-/**
- * Get reviews for a restaurant
- * GET /api/reviews/restaurant/:restaurantId
- */
-router.get(
-    '/restaurant/:restaurantId',
-    validate([
-        param('restaurantId').isMongoId().withMessage('Invalid restaurant ID'),
-        query('page').optional().isInt({ min: 1 }).withMessage('Page must be a positive integer'),
-        query('limit').optional().isInt({ min: 1, max: 50 }).withMessage('Limit must be between 1 and 50'),
-        query('rating').optional().isInt({ min: 1, max: 5 }).withMessage('Rating must be between 1 and 5'),
-    ]),
-    getReviews
-);
-
-/**
- * Get reviews for a menu item
- * GET /api/reviews/menu-item/:menuItemId
- */
-router.get(
-    '/menu-item/:menuItemId',
-    validate([
-        param('menuItemId').isMongoId().withMessage('Invalid menu item ID'),
-        query('page').optional().isInt({ min: 1 }).withMessage('Page must be a positive integer'),
-        query('limit').optional().isInt({ min: 1, max: 50 }).withMessage('Limit must be between 1 and 50'),
-    ]),
-    getReviews
-);
-
-/**
- * Get reviews for a rider
- * GET /api/reviews/rider/:riderId
- */
-router.get(
-    '/rider/:riderId',
-    validate([
-        param('riderId').isMongoId().withMessage('Invalid rider ID'),
-        query('page').optional().isInt({ min: 1 }).withMessage('Page must be a positive integer'),
-        query('limit').optional().isInt({ min: 1, max: 50 }).withMessage('Limit must be between 1 and 50'),
-    ]),
-    getReviews
-);
-
-// ============================================
 // GET REVIEW STATISTICS
 // ============================================
 
@@ -238,6 +236,8 @@ router.get(
     validate([
         param('targetType').isIn(['restaurant', 'menuItem', 'rider']).withMessage('Invalid target type'),
         param('targetId').isMongoId().withMessage('Invalid target ID'),
+        query('page').optional().isInt({ min: 1 }).withMessage('Page must be a positive integer'),
+        query('limit').optional().isInt({ min: 1, max: 50 }).withMessage('Limit must be between 1 and 50'),
     ]),
     getReviews
 );
