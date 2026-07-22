@@ -1,0 +1,824 @@
+2026-07-20 22:44:03 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m390[0m:[93m34[0m - [91merror[0m[90m TS2339: [0mProperty '_id' does not exist on type 'User'.
+
+[7m390[0m         if (req.user && req.user._id.toString() === userId) {
+[7m   [0m [91m                                 ~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m398[0m:[93m91[0m - [91merror[0m[90m TS2339: [0mProperty 'email' does not exist on type 'User'.
+
+[7m398[0m         logger.info(`✅ User role updated: ${user.email} -> ${role} (by admin: ${req.user?.email})`);
+[7m   [0m [91m                                                                                          ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m390[0m:[93m34[0m - [91merror[0m[90m TS2339: [0mProperty '_id' does not exist on type 'User'.
+
+[7m390[0m         if (req.user && req.user._id.toString() === userId) {
+[7m   [0m [91m                                 ~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m398[0m:[93m91[0m - [91merror[0m[90m TS2339: [0mProperty 'email' does not exist on type 'User'.
+
+[7m398[0m         logger.info(`✅ User role updated: ${user.email} -> ${role} (by admin: ${req.user?.email})`);
+[7m   [0m [91m                                                                                          ~~~~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m390[0m:[93m34[0m - [91merror[0m[90m TS2339: [0mProperty '_id' does not exist on type 'User'.
+
+[7m390[0m         if (req.user && req.user._id.toString() === userId) {
+[7m   [0m [91m                                 ~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m398[0m:[93m91[0m - [91merror[0m[90m TS2339: [0mProperty 'email' does not exist on type 'User'.
+
+[7m398[0m         logger.info(`✅ User role updated: ${user.email} -> ${role} (by admin: ${req.user?.email})`);
+[7m   [0m [91m                                                                                          ~~~~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2026-07-20 22:46:21 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m390[0m:[93m34[0m - [91merror[0m[90m TS2339: [0mProperty '_id' does not exist on type 'User'.
+
+[7m390[0m         if (req.user && req.user._id.toString() === userId) {
+[7m   [0m [91m                                 ~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m398[0m:[93m91[0m - [91merror[0m[90m TS2339: [0mProperty 'email' does not exist on type 'User'.
+
+[7m398[0m         logger.info(`✅ User role updated: ${user.email} -> ${role} (by admin: ${req.user?.email})`);
+[7m   [0m [91m                                                                                          ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m390[0m:[93m34[0m - [91merror[0m[90m TS2339: [0mProperty '_id' does not exist on type 'User'.
+
+[7m390[0m         if (req.user && req.user._id.toString() === userId) {
+[7m   [0m [91m                                 ~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m398[0m:[93m91[0m - [91merror[0m[90m TS2339: [0mProperty 'email' does not exist on type 'User'.
+
+[7m398[0m         logger.info(`✅ User role updated: ${user.email} -> ${role} (by admin: ${req.user?.email})`);
+[7m   [0m [91m                                                                                          ~~~~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m390[0m:[93m34[0m - [91merror[0m[90m TS2339: [0mProperty '_id' does not exist on type 'User'.
+
+[7m390[0m         if (req.user && req.user._id.toString() === userId) {
+[7m   [0m [91m                                 ~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m398[0m:[93m91[0m - [91merror[0m[90m TS2339: [0mProperty 'email' does not exist on type 'User'.
+
+[7m398[0m         logger.info(`✅ User role updated: ${user.email} -> ${role} (by admin: ${req.user?.email})`);
+[7m   [0m [91m                                                                                          ~~~~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2026-07-20 22:47:39 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/admin.routes.ts[0m:[93m10[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getUsers'. Did you mean to use 'import getUsers from "../controllers/admin.controller"' instead?
+
+[7m10[0m     getUsers,
+[7m  [0m [91m    ~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m11[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getUser'. Did you mean to use 'import getUser from "../controllers/admin.controller"' instead?
+
+[7m11[0m     getUser,
+[7m  [0m [91m    ~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m12[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'updateUserStatus'. Did you mean to use 'import updateUserStatus from "../controllers/admin.controller"' instead?
+
+[7m12[0m     updateUserStatus,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m13[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'deleteUser'. Did you mean to use 'import deleteUser from "../controllers/admin.controller"' instead?
+
+[7m13[0m     deleteUser,
+[7m  [0m [91m    ~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m14[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getRestaurants'. Did you mean to use 'import getRestaurants from "../controllers/admin.controller"' instead?
+
+[7m14[0m     getRestaurants as adminGetRestaurants,
+[7m  [0m [91m    ~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m15[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'verifyRestaurant'. Did you mean to use 'import verifyRestaurant from "../controllers/admin.controller"' instead?
+
+[7m15[0m     verifyRestaurant,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m16[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'updateRestaurantStatus'. Did you mean to use 'import updateRestaurantStatus from "../controllers/admin.controller"' instead?
+
+[7m16[0m     updateRestaurantStatus,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m17[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getAllOrders'. Did you mean to use 'import getAllOrders from "../controllers/admin.controller"' instead?
+
+[7m17[0m     getAllOrders,
+[7m  [0m [91m    ~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m18[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getDashboardStats'. Did you mean to use 'import getDashboardStats from "../controllers/admin.controller"' instead?
+
+[7m18[0m     getDashboardStats,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m19[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getRevenueStats'. Did you mean to use 'import getRevenueStats from "../controllers/admin.controller"' instead?
+
+[7m19[0m     getRevenueStats,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m20[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'updateUserRole'. Did you mean to use 'import updateUserRole from "../controllers/admin.controller"' instead?
+
+[7m20[0m     updateUserRole, // ✅ এই লাইন যোগ করুন
+[7m  [0m [91m    ~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/admin.routes.ts[0m:[93m10[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getUsers'. Did you mean to use 'import getUsers from "../controllers/admin.controller"' instead?
+
+[7m10[0m     getUsers,
+[7m  [0m [91m    ~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m11[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getUser'. Did you mean to use 'import getUser from "../controllers/admin.controller"' instead?
+
+[7m11[0m     getUser,
+[7m  [0m [91m    ~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m12[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'updateUserStatus'. Did you mean to use 'import updateUserStatus from "../controllers/admin.controller"' instead?
+
+[7m12[0m     updateUserStatus,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m13[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'deleteUser'. Did you mean to use 'import deleteUser from "../controllers/admin.controller"' instead?
+
+[7m13[0m     deleteUser,
+[7m  [0m [91m    ~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m14[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getRestaurants'. Did you mean to use 'import getRestaurants from "../controllers/admin.controller"' instead?
+
+[7m14[0m     getRestaurants as adminGetRestaurants,
+[7m  [0m [91m    ~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m15[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'verifyRestaurant'. Did you mean to use 'import verifyRestaurant from "../controllers/admin.controller"' instead?
+
+[7m15[0m     verifyRestaurant,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m16[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'updateRestaurantStatus'. Did you mean to use 'import updateRestaurantStatus from "../controllers/admin.controller"' instead?
+
+[7m16[0m     updateRestaurantStatus,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m17[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getAllOrders'. Did you mean to use 'import getAllOrders from "../controllers/admin.controller"' instead?
+
+[7m17[0m     getAllOrders,
+[7m  [0m [91m    ~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m18[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getDashboardStats'. Did you mean to use 'import getDashboardStats from "../controllers/admin.controller"' instead?
+
+[7m18[0m     getDashboardStats,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m19[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getRevenueStats'. Did you mean to use 'import getRevenueStats from "../controllers/admin.controller"' instead?
+
+[7m19[0m     getRevenueStats,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m20[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'updateUserRole'. Did you mean to use 'import updateUserRole from "../controllers/admin.controller"' instead?
+
+[7m20[0m     updateUserRole, // ✅ এই লাইন যোগ করুন
+[7m  [0m [91m    ~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/admin.routes.ts[0m:[93m10[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getUsers'. Did you mean to use 'import getUsers from "../controllers/admin.controller"' instead?
+
+[7m10[0m     getUsers,
+[7m  [0m [91m    ~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m11[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getUser'. Did you mean to use 'import getUser from "../controllers/admin.controller"' instead?
+
+[7m11[0m     getUser,
+[7m  [0m [91m    ~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m12[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'updateUserStatus'. Did you mean to use 'import updateUserStatus from "../controllers/admin.controller"' instead?
+
+[7m12[0m     updateUserStatus,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m13[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'deleteUser'. Did you mean to use 'import deleteUser from "../controllers/admin.controller"' instead?
+
+[7m13[0m     deleteUser,
+[7m  [0m [91m    ~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m14[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getRestaurants'. Did you mean to use 'import getRestaurants from "../controllers/admin.controller"' instead?
+
+[7m14[0m     getRestaurants as adminGetRestaurants,
+[7m  [0m [91m    ~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m15[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'verifyRestaurant'. Did you mean to use 'import verifyRestaurant from "../controllers/admin.controller"' instead?
+
+[7m15[0m     verifyRestaurant,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m16[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'updateRestaurantStatus'. Did you mean to use 'import updateRestaurantStatus from "../controllers/admin.controller"' instead?
+
+[7m16[0m     updateRestaurantStatus,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m17[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getAllOrders'. Did you mean to use 'import getAllOrders from "../controllers/admin.controller"' instead?
+
+[7m17[0m     getAllOrders,
+[7m  [0m [91m    ~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m18[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getDashboardStats'. Did you mean to use 'import getDashboardStats from "../controllers/admin.controller"' instead?
+
+[7m18[0m     getDashboardStats,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m19[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'getRevenueStats'. Did you mean to use 'import getRevenueStats from "../controllers/admin.controller"' instead?
+
+[7m19[0m     getRevenueStats,
+[7m  [0m [91m    ~~~~~~~~~~~~~~~[0m
+[96msrc/routes/admin.routes.ts[0m:[93m20[0m:[93m5[0m - [91merror[0m[90m TS2614: [0mModule '"../controllers/admin.controller"' has no exported member 'updateUserRole'. Did you mean to use 'import updateUserRole from "../controllers/admin.controller"' instead?
+
+[7m20[0m     updateUserRole, // ✅ এই লাইন যোগ করুন
+[7m  [0m [91m    ~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2026-07-20 23:03:04 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m633[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'image' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m633[0m         if (image) blog.image = image;
+[7m   [0m [91m                        ~~~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m634[0m:[93m26[0m - [91merror[0m[90m TS2339: [0mProperty 'status' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m634[0m         if (status) blog.status = status;
+[7m   [0m [91m                         ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m633[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'image' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m633[0m         if (image) blog.image = image;
+[7m   [0m [91m                        ~~~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m634[0m:[93m26[0m - [91merror[0m[90m TS2339: [0mProperty 'status' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m634[0m         if (status) blog.status = status;
+[7m   [0m [91m                         ~~~~~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m633[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'image' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m633[0m         if (image) blog.image = image;
+[7m   [0m [91m                        ~~~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m634[0m:[93m26[0m - [91merror[0m[90m TS2339: [0mProperty 'status' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m634[0m         if (status) blog.status = status;
+[7m   [0m [91m                         ~~~~~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2026-07-20 23:04:10 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m633[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'image' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m633[0m         if (image) blog.image = image;
+[7m   [0m [91m                        ~~~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m634[0m:[93m26[0m - [91merror[0m[90m TS2339: [0mProperty 'status' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m634[0m         if (status) blog.status = status;
+[7m   [0m [91m                         ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m633[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'image' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m633[0m         if (image) blog.image = image;
+[7m   [0m [91m                        ~~~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m634[0m:[93m26[0m - [91merror[0m[90m TS2339: [0mProperty 'status' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m634[0m         if (status) blog.status = status;
+[7m   [0m [91m                         ~~~~~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/admin.controller.ts[0m:[93m633[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'image' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m633[0m         if (image) blog.image = image;
+[7m   [0m [91m                        ~~~~~[0m
+[96msrc/controllers/admin.controller.ts[0m:[93m634[0m:[93m26[0m - [91merror[0m[90m TS2339: [0mProperty 'status' does not exist on type 'Document<unknown, {}, IBlog> & IBlog & { _id: ObjectId; }'.
+
+[7m634[0m         if (status) blog.status = status;
+[7m   [0m [91m                         ~~~~~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2026-07-22 20:02:31 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/order.controller.ts[0m:[93m289[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m289[0m     io.to(`restaurant-${restaurantId}`).emit('new-order', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m386[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m386[0m     io.to(`order-${order._id}`).emit('order-updated', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m397[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m397[0m       io.to(`user-${order.customer._id}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m408[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m408[0m       io.to(`user-${restaurantOwnerId}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m492[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m492[0m     io.to(`user-${riderId}`).emit('new-delivery', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m505[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m505[0m       io.to(`user-${restaurantOwnerId}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m515[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m515[0m       io.to(`user-${order.customer._id}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m592[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m592[0m     io.to(`order-${order._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m596[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m596[0m       io.to(`user-${order.customer._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m601[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m601[0m       io.to(`user-${restaurantOwnerId}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m606[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m606[0m       io.to(`user-${order.rider}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/order.controller.ts[0m:[93m289[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m289[0m     io.to(`restaurant-${restaurantId}`).emit('new-order', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m386[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m386[0m     io.to(`order-${order._id}`).emit('order-updated', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m397[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m397[0m       io.to(`user-${order.customer._id}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m408[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m408[0m       io.to(`user-${restaurantOwnerId}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m492[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m492[0m     io.to(`user-${riderId}`).emit('new-delivery', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m505[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m505[0m       io.to(`user-${restaurantOwnerId}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m515[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m515[0m       io.to(`user-${order.customer._id}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m592[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m592[0m     io.to(`order-${order._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m596[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m596[0m       io.to(`user-${order.customer._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m601[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m601[0m       io.to(`user-${restaurantOwnerId}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m606[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m606[0m       io.to(`user-${order.rider}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/order.controller.ts[0m:[93m289[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m289[0m     io.to(`restaurant-${restaurantId}`).emit('new-order', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m386[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m386[0m     io.to(`order-${order._id}`).emit('order-updated', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m397[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m397[0m       io.to(`user-${order.customer._id}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m408[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m408[0m       io.to(`user-${restaurantOwnerId}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m492[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m492[0m     io.to(`user-${riderId}`).emit('new-delivery', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m505[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m505[0m       io.to(`user-${restaurantOwnerId}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m515[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m515[0m       io.to(`user-${order.customer._id}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m592[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m592[0m     io.to(`order-${order._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m596[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m596[0m       io.to(`user-${order.customer._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m601[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m601[0m       io.to(`user-${restaurantOwnerId}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m606[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m606[0m       io.to(`user-${order.rider}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2026-07-22 20:03:24 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/order.controller.ts[0m:[93m289[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m289[0m     io.to(`restaurant-${restaurantId}`).emit('new-order', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m386[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m386[0m     io.to(`order-${order._id}`).emit('order-updated', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m397[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m397[0m       io.to(`user-${order.customer._id}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m408[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m408[0m       io.to(`user-${restaurantOwnerId}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m492[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m492[0m     io.to(`user-${riderId}`).emit('new-delivery', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m505[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m505[0m       io.to(`user-${restaurantOwnerId}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m515[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m515[0m       io.to(`user-${order.customer._id}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m592[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m592[0m     io.to(`order-${order._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m596[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m596[0m       io.to(`user-${order.customer._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m601[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m601[0m       io.to(`user-${restaurantOwnerId}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m606[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m606[0m       io.to(`user-${order.rider}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/order.controller.ts[0m:[93m289[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m289[0m     io.to(`restaurant-${restaurantId}`).emit('new-order', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m386[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m386[0m     io.to(`order-${order._id}`).emit('order-updated', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m397[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m397[0m       io.to(`user-${order.customer._id}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m408[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m408[0m       io.to(`user-${restaurantOwnerId}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m492[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m492[0m     io.to(`user-${riderId}`).emit('new-delivery', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m505[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m505[0m       io.to(`user-${restaurantOwnerId}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m515[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m515[0m       io.to(`user-${order.customer._id}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m592[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m592[0m     io.to(`order-${order._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m596[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m596[0m       io.to(`user-${order.customer._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m601[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m601[0m       io.to(`user-${restaurantOwnerId}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m606[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m606[0m       io.to(`user-${order.rider}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/order.controller.ts[0m:[93m289[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m289[0m     io.to(`restaurant-${restaurantId}`).emit('new-order', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m386[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m386[0m     io.to(`order-${order._id}`).emit('order-updated', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m397[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m397[0m       io.to(`user-${order.customer._id}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m408[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m408[0m       io.to(`user-${restaurantOwnerId}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m492[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m492[0m     io.to(`user-${riderId}`).emit('new-delivery', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m505[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m505[0m       io.to(`user-${restaurantOwnerId}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m515[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m515[0m       io.to(`user-${order.customer._id}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m592[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m592[0m     io.to(`order-${order._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m596[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m596[0m       io.to(`user-${order.customer._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m601[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m601[0m       io.to(`user-${restaurantOwnerId}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m606[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m606[0m       io.to(`user-${order.rider}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2026-07-22 20:03:42 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/order.controller.ts[0m:[93m289[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m289[0m     io.to(`restaurant-${restaurantId}`).emit('new-order', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m386[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m386[0m     io.to(`order-${order._id}`).emit('order-updated', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m397[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m397[0m       io.to(`user-${order.customer._id}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m408[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m408[0m       io.to(`user-${restaurantOwnerId}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m492[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m492[0m     io.to(`user-${riderId}`).emit('new-delivery', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m505[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m505[0m       io.to(`user-${restaurantOwnerId}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m515[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m515[0m       io.to(`user-${order.customer._id}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m592[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m592[0m     io.to(`order-${order._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m596[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m596[0m       io.to(`user-${order.customer._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m601[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m601[0m       io.to(`user-${restaurantOwnerId}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m606[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m606[0m       io.to(`user-${order.rider}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/order.controller.ts[0m:[93m289[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m289[0m     io.to(`restaurant-${restaurantId}`).emit('new-order', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m386[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m386[0m     io.to(`order-${order._id}`).emit('order-updated', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m397[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m397[0m       io.to(`user-${order.customer._id}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m408[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m408[0m       io.to(`user-${restaurantOwnerId}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m492[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m492[0m     io.to(`user-${riderId}`).emit('new-delivery', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m505[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m505[0m       io.to(`user-${restaurantOwnerId}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m515[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m515[0m       io.to(`user-${order.customer._id}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m592[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m592[0m     io.to(`order-${order._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m596[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m596[0m       io.to(`user-${order.customer._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m601[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m601[0m       io.to(`user-${restaurantOwnerId}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m606[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m606[0m       io.to(`user-${order.rider}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/order.controller.ts[0m:[93m289[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m289[0m     io.to(`restaurant-${restaurantId}`).emit('new-order', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m386[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m386[0m     io.to(`order-${order._id}`).emit('order-updated', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m397[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m397[0m       io.to(`user-${order.customer._id}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m408[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m408[0m       io.to(`user-${restaurantOwnerId}`).emit('order-status-changed', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m492[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m492[0m     io.to(`user-${riderId}`).emit('new-delivery', {
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m505[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m505[0m       io.to(`user-${restaurantOwnerId}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m515[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m515[0m       io.to(`user-${order.customer._id}`).emit('rider-assigned', {
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m592[0m:[93m5[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m592[0m     io.to(`order-${order._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m    ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m596[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m596[0m       io.to(`user-${order.customer._id}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m601[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m601[0m       io.to(`user-${restaurantOwnerId}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+[96msrc/controllers/order.controller.ts[0m:[93m606[0m:[93m7[0m - [91merror[0m[90m TS18047: [0m'io' is possibly 'null'.
+
+[7m606[0m       io.to(`user-${order.rider}`).emit('order-cancelled', cancelData);
+[7m   [0m [91m      ~~[0m
+
+    at createTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\project\fast-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\project\fast-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)

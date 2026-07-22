@@ -1,0 +1,434 @@
+📋 BASE URL
+text
+http://localhost:5000
+🔐 STEP 1: Authentication (সবার আগে)
+1.1 Register Admin
+text
+POST http://localhost:5000/api/auth/register
+Body:
+
+json
+{
+  "name": "Super Admin",
+  "email": "admin@fastfeast.com",
+  "password": "admin123456",
+  "phone": "+8801712345678",
+  "role": "admin"
+}
+Response: Token পাবেন
+
+1.2 Login Admin
+text
+POST http://localhost:5000/api/auth/login
+Body:
+
+json
+{
+  "email": "admin@fastfeast.com",
+  "password": "admin123456"
+}
+Response থেকে Token কপি করুন:
+
+json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+এই Token সব Admin API তে ব্যবহার করবেন
+
+👑 STEP 2: Admin APIs (Admin Token দিয়ে)
+2.1 Get All Users
+text
+GET http://localhost:5000/api/admin/users?page=1&limit=10
+Headers:
+
+text
+Authorization: Bearer YOUR_ADMIN_TOKEN
+Response:
+
+json
+{
+  "success": true,
+  "count": 1,
+  "users": [...]
+}
+2.2 Get Single User (ID দিয়ে)
+text
+GET http://localhost:5000/api/admin/users/USER_ID
+Headers:
+
+text
+Authorization: Bearer YOUR_ADMIN_TOKEN
+Note: USER_ID = উপরের Response থেকে _id নিন
+
+2.3 Update User Status
+text
+PUT http://localhost:5000/api/admin/users/USER_ID/status
+Headers:
+
+text
+Authorization: Bearer YOUR_ADMIN_TOKEN
+Body:
+
+json
+{
+  "status": "active"
+}
+2.4 Update User Role
+text
+PUT http://localhost:5000/api/admin/users/USER_ID/role
+Headers:
+
+text
+Authorization: Bearer YOUR_ADMIN_TOKEN
+Body:
+
+json
+{
+  "role": "admin"
+}
+2.5 Delete User
+text
+DELETE http://localhost:5000/api/admin/users/USER_ID
+Headers:
+
+text
+Authorization: Bearer YOUR_ADMIN_TOKEN
+🏪 STEP 3: Restaurant APIs
+3.1 Register Restaurant Owner
+text
+POST http://localhost:5000/api/auth/register
+Body:
+
+json
+{
+  "name": "Pizza Palace Owner",
+  "email": "owner@pizzapalace.com",
+  "password": "password123",
+  "phone": "+8801712345678",
+  "role": "restaurant"
+}
+3.2 Login Restaurant Owner
+text
+POST http://localhost:5000/api/auth/login
+Body:
+
+json
+{
+  "email": "owner@pizzapalace.com",
+  "password": "password123"
+}
+Token নিন: RESTAURANT_TOKEN
+
+3.3 Create Restaurant (Restaurant Token দিয়ে)
+text
+POST http://localhost:5000/api/restaurants
+Headers:
+
+text
+Authorization: Bearer RESTAURANT_TOKEN
+Body:
+
+json
+{
+  "restaurantName": "Pizza Palace",
+  "description": "Best authentic Italian pizza in town.",
+  "cuisineType": ["Italian", "Pizza", "Pasta"],
+  "address": {
+    "street": "House 23, Road 7, Gulshan-1",
+    "city": "Dhaka",
+    "state": "Dhaka",
+    "zipCode": "1212",
+    "country": "Bangladesh"
+  },
+  "phone": "+8801712345678",
+  "email": "info@pizzapalace.com",
+  "deliveryTime": 30,
+  "deliveryCharge": 50,
+  "minimumOrder": 200
+}
+Response থেকে _id নিন: RESTAURANT_ID
+
+3.4 Get All Restaurants (Public)
+text
+GET http://localhost:5000/api/restaurants?page=1&limit=10
+No Auth Needed
+
+3.5 Get Single Restaurant
+text
+GET http://localhost:5000/api/restaurants/RESTAURANT_ID
+👑 STEP 4: Admin Restaurant APIs (Admin Token দিয়ে)
+4.1 Get All Restaurants (Admin View)
+text
+GET http://localhost:5000/api/admin/restaurants?page=1&limit=10
+Headers:
+
+text
+Authorization: Bearer ADMIN_TOKEN
+4.2 Get Single Restaurant (Admin)
+text
+GET http://localhost:5000/api/admin/restaurants/RESTAURANT_ID
+Headers:
+
+text
+Authorization: Bearer ADMIN_TOKEN
+4.3 Verify Restaurant
+text
+PUT http://localhost:5000/api/admin/restaurants/RESTAURANT_ID/verify
+Headers:
+
+text
+Authorization: Bearer ADMIN_TOKEN
+4.4 Update Restaurant Status
+text
+PUT http://localhost:5000/api/admin/restaurants/RESTAURANT_ID/status
+Headers:
+
+text
+Authorization: Bearer ADMIN_TOKEN
+Body:
+
+json
+{
+  "status": "active"
+}
+4.5 Delete Restaurant (Admin)
+text
+DELETE http://localhost:5000/api/admin/restaurants/RESTAURANT_ID
+Headers:
+
+text
+Authorization: Bearer ADMIN_TOKEN
+📋 STEP 5: Menu APIs
+5.1 Create Menu Item (Restaurant Token দিয়ে)
+text
+POST http://localhost:5000/api/menu
+Headers:
+
+text
+Authorization: Bearer RESTAURANT_TOKEN
+Body:
+
+json
+{
+  "restaurant": "RESTAURANT_ID",
+  "name": "Margherita Pizza",
+  "description": "Classic pizza with tomato and mozzarella",
+  "price": 450,
+  "category": "mains",
+  "isVegetarian": true,
+  "isSpicy": false,
+  "preparationTime": 15
+}
+Response থেকে _id নিন: MENU_ID
+
+5.2 Get All Menu Items
+text
+GET http://localhost:5000/api/menu?restaurantId=RESTAURANT_ID&page=1&limit=20
+5.3 Get Single Menu Item
+text
+GET http://localhost:5000/api/menu/MENU_ID
+5.4 Update Menu Item
+text
+PUT http://localhost:5000/api/menu/MENU_ID
+Headers:
+
+text
+Authorization: Bearer RESTAURANT_TOKEN
+Body:
+
+json
+{
+  "price": 480
+}
+5.5 Delete Menu Item
+text
+DELETE http://localhost:5000/api/menu/MENU_ID
+Headers:
+
+text
+Authorization: Bearer RESTAURANT_TOKEN
+📦 STEP 6: Order APIs
+6.1 Register Customer
+text
+POST http://localhost:5000/api/auth/register
+Body:
+
+json
+{
+  "name": "John Doe",
+  "email": "customer@test.com",
+  "password": "password123",
+  "phone": "+8801712345678",
+  "role": "customer"
+}
+6.2 Login Customer
+text
+POST http://localhost:5000/api/auth/login
+Body:
+
+json
+{
+  "email": "customer@test.com",
+  "password": "password123"
+}
+Token নিন: CUSTOMER_TOKEN
+
+6.3 Create Order (Customer Token দিয়ে)
+text
+POST http://localhost:5000/api/orders
+Headers:
+
+text
+Authorization: Bearer CUSTOMER_TOKEN
+Body:
+
+json
+{
+  "restaurant": "RESTAURANT_ID",
+  "items": [
+    {
+      "menuItem": "MENU_ID",
+      "quantity": 2,
+      "price": 450
+    }
+  ],
+  "deliveryAddress": {
+    "street": "House 12, Road 5",
+    "city": "Dhaka",
+    "state": "Dhaka",
+    "zipCode": "1212",
+    "country": "Bangladesh"
+  },
+  "paymentMethod": "cod"
+}
+Response থেকে _id নিন: ORDER_ID
+
+6.4 Get Orders (Customer)
+text
+GET http://localhost:5000/api/orders?page=1&limit=10
+Headers:
+
+text
+Authorization: Bearer CUSTOMER_TOKEN
+6.5 Get Single Order
+text
+GET http://localhost:5000/api/orders/ORDER_ID
+Headers:
+
+text
+Authorization: Bearer CUSTOMER_TOKEN
+6.6 Update Order Status (Restaurant)
+text
+PUT http://localhost:5000/api/orders/ORDER_ID/status
+Headers:
+
+text
+Authorization: Bearer RESTAURANT_TOKEN
+Body:
+
+json
+{
+  "orderStatus": "confirmed"
+}
+💳 STEP 7: Payment APIs
+7.1 Create Payment Intent
+text
+POST http://localhost:5000/api/payments/create-payment-intent
+Headers:
+
+text
+Authorization: Bearer CUSTOMER_TOKEN
+Body:
+
+json
+{
+  "orderId": "ORDER_ID"
+}
+7.2 Get Payment Status
+text
+GET http://localhost:5000/api/payments/status/ORDER_ID
+Headers:
+
+text
+Authorization: Bearer CUSTOMER_TOKEN
+📝 STEP 8: Blog APIs
+8.1 Create Blog (Admin Token দিয়ে)
+text
+POST http://localhost:5000/api/admin/blogs
+Headers:
+
+text
+Authorization: Bearer ADMIN_TOKEN
+Body:
+
+json
+{
+  "title": "My First Blog Post",
+  "content": "This is the full blog content...",
+  "category": "food",
+  "tags": ["food", "recipes"],
+  "status": "published"
+}
+Response থেকে _id নিন: BLOG_ID
+
+8.2 Get All Blogs (Public)
+text
+GET http://localhost:5000/api/blog?page=1&limit=10
+8.3 Get Blog by Slug
+text
+GET http://localhost:5000/api/blog/slug/my-first-blog-post
+8.4 Update Blog (Admin)
+text
+PUT http://localhost:5000/api/admin/blogs/BLOG_ID
+Headers:
+
+text
+Authorization: Bearer ADMIN_TOKEN
+Body:
+
+json
+{
+  "title": "Updated Blog Title"
+}
+8.5 Delete Blog (Admin)
+text
+DELETE http://localhost:5000/api/admin/blogs/BLOG_ID
+Headers:
+
+text
+Authorization: Bearer ADMIN_TOKEN
+⭐ STEP 9: Review APIs
+9.1 Create Review (Customer Token দিয়ে)
+text
+POST http://localhost:5000/api/reviews
+Headers:
+
+text
+Authorization: Bearer CUSTOMER_TOKEN
+Body:
+
+json
+{
+  "restaurant": "RESTAURANT_ID",
+  "rating": 5,
+  "comment": "Excellent food and service!",
+  "reviewType": "restaurant"
+}
+9.2 Get All Reviews
+text
+GET http://localhost:5000/api/reviews?restaurantId=RESTAURANT_ID&page=1&limit=10
+📊 STEP 10: Dashboard APIs
+10.1 Get Dashboard Stats (Admin)
+text
+GET http://localhost:5000/api/admin/stats?period=week
+Headers:
+
+text
+Authorization: Bearer ADMIN_TOKEN
+10.2 Get Revenue Stats (Admin)
+text
+GET http://localhost:5000/api/admin/revenue?period=month
+Headers:
+
+text
+Authorization: Bearer ADMIN_TOKEN

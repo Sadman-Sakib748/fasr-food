@@ -1,0 +1,558 @@
+# ============================================
+# DEPENDENCIES
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# BUILD OUTPUTS
+# ============================================
+dist/
+build/
+.vercel/
+.next/
+out/
+*.tsbuildinfo
+
+# ============================================
+# ENVIRONMENT FILES
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+.env.production
+.env.development
+
+# ============================================
+# IDE AND EDITOR FILES
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.settings/
+*.iml
+*.komodoproject
+*.kodoprj
+*.backup
+*.orig
+*.rej
+*.patch
+
+# ============================================
+# OPERATING SYSTEM FILES
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# ============================================
+# LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+debug.log
+error.log
+access.log
+combined.log
+
+# ============================================
+# TESTING
+# ============================================
+coverage/
+.nyc_output/
+*.lcov
+*.test.js
+*.spec.js
+*.test.ts
+*.spec.ts
+/test-results/
+/e2e-results/
+/junit.xml
+/playwright-report/
+
+# ============================================
+# CACHE FILES
+# ============================================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.prettiercache
+.tscache
+.turbocache
+.nx/
+.nx-cache/
+
+# ============================================
+# MONGODB
+# ============================================
+*.mongodb
+/data/
+dump/
+*.dump
+
+# ============================================
+# SECURITY
+# ============================================
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.truststore
+.ssh/
+id_rsa
+id_rsa.pub
+known_hosts
+
+# ============================================
+# UPLOADS AND TEMP FILES
+# ============================================
+uploads/
+temp/
+tmp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+
+# ============================================
+# DATABASE
+# ============================================
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.rdb
+*.mdb
+*.accdb
+
+# ============================================
+# DOCKER
+# ============================================
+docker-compose.override.yml
+.dockerignore
+Dockerfile.prod
+*.dockerfile
+
+# ============================================
+# GIT
+# ============================================
+.git/
+.gitattributes
+.gitmodules
+.gitignore
+.gitkeep
+*.orig
+*.rej
+
+# ============================================
+# NPM PACKAGE FILES
+# ============================================
+npm-shrinkwrap.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# TYPESCRIPT
+# ============================================
+*.d.ts.map
+*.js.map
+*.js
+*.d.ts
+*.ts.map
+!*.d.ts
+!*.js.map
+
+# ============================================
+# REDIS
+# ============================================
+dump.rdb
+appendonly.aof
+*.aof
+*.rdb
+
+# ============================================
+# VERCEL
+# ============================================
+.vercel/
+vercel.json
+.vercelignore
+.vercel_output/
+
+# ============================================
+# MISCELLANEOUS
+# ============================================
+*.tar
+*.gz
+*.rar
+*.zip
+*.7z
+*.tgz
+*.iso
+*.img
+*.pkg
+*.deb
+*.rpm
+*.apk
+*.exe
+*.msi
+*.dmg
+*.bin
+*.dat
+*.mp4
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+*.mov
+*.avi
+*.mkv
+*.wmv
+*.flv
+*.webm
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.bmp
+*.svg
+*.ico
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.odt
+*.ods
+*.odp
+*.csv
+*.xml
+*.yml
+*.yaml
+*.toml
+*.ini
+*.cfg
+*.conf
+
+# ============================================
+# APPLICATION SPECIFIC
+# ============================================
+# FastFeast specific
+seed-data/
+screenshots/
+test-results/
+performance/
+reports/
+backups/
+
+# User uploaded files
+profile-pictures/
+restaurant-images/
+menu-images/
+blog-images/
+public/uploads/
+public/images/
+public/temp/
+
+# Log files
+logs/
+*.log
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Environment variables
+.env*
+!.env.example
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+.vercel/
+.next/
+out/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.mongodb
+
+# Certificates
+*.pem
+*.key
+*.crt
+*.cert
+
+# Uploads
+uploads/
+temp-uploads/
+
+# Redis
+dump.rdb
+appendonly.aof
+
+# Docker
+docker-compose.override.yml
+*.dockerfile
+
+# Package lock files (Optional - uncomment if needed)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Debug
+debug.log
+error.log
+
+# Sentry
+.sentryclirc
+.sentry-native/
+
+# Backup files
+*.backup
+*.bak
+
+# Configuration files that contain sensitive data
+config/local.json
+config/production.json
+config/development.json
+!config/default.json
+
+# Temporary seed files
+seed-data/
+temp-seed/
+
+# PM2 logs
+.pm2/
+
+# AWS credentials
+.aws/
+
+# GCP credentials
+.gcloud/
+
+# Heroku
+.heroku/
+
+# Railway
+.railway/
+
+# Firebase
+.firebase/
+
+# Supabase
+.supabase/
+
+# ============================================
+# BEHIND PROXY / REVERSE PROXY
+# ============================================
+*.sock
+*.socket
+*.pid
+*.lock
+
+# ============================================
+# GENERATED FILES
+# ============================================
+/generated/
+/api-docs/
+/swagger/
+/typedoc/
+
+# ============================================
+# AUTHENTICATION / SECURITY
+# ============================================
+.htaccess
+.htpasswd
+.ssh/
+known_hosts
+authorized_keys
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+
+# ============================================
+# NODEMON
+# ============================================
+nodemon.json
+!nodemon.example.json
+
+# ============================================
+# STORYBOOK / DESIGN SYSTEMS
+# ============================================
+storybook-static/
+*.stories.js
+*.stories.jsx
+*.stories.ts
+*.stories.tsx
+
+# ============================================
+# NEXT.JS SPECIFIC
+# ============================================
+.next/
+out/
+.nx/
+
+# ============================================
+# EXPO / REACT NATIVE
+# ============================================
+.expo/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.pem
+*.mobileprovision
+*.ipa
+*.apk
+
+# ============================================
+# MISC
+# ============================================
+*.heic
+*.heif
+*.webm
+*.mkv
+*.flv
+*.avi
+*.mov
+*.wmv
+*.flac
+*.alac
+*.aac
+*.ogg
+*.wma
+*.ds_store
+*.localized
+*.metadata
+*.metadata.bak
+*.swf
+*.fla
+*.as
+*.as3
+*.swc
+*.air
+*.airi
+*.mxml
+*.fxg
+*.flex
+*.flex2
+*.flex3
+*.flex4
+*.maven
+*.gradle
+*.ant
+*.ivy
+*.pom
+*.classpath
+*.project
+*.settings
+*.factorypath
+*.springBeans
+*.spring
+*.hibernate
+*.jpa
+*.ejb
+*.servlet
+*.jsp
+*.jspx
+*.tag
+*.tagx
+*.tld
+*.war
+*.jar
+*.ear
+*.rar
+*.sar
+*.par
+*.mar
+*.dar
+*.kar
+*.nar
+*.har
+*.war
+
+# ============================================
+# END OF .gitignore
+# ============================================
